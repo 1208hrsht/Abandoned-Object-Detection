@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 from collections import Counter, defaultdict
  
-firstframe_path =r'C:\Users\1208hrsht\Desktop\FrameNo0.png'
+firstframe_path =r'Input Path of first frame'
 
 firstframe = cv2.imread(firstframe_path)
 firstframe_gray = cv2.cvtColor(firstframe, cv2.COLOR_BGR2GRAY)
@@ -12,7 +12,7 @@ cv2.namedWindow('CannyEdgeDet',cv2.WINDOW_NORMAL)
 cv2.namedWindow('Abandoned Object Detection',cv2.WINDOW_NORMAL)
 cv2.namedWindow('Morph_CLOSE',cv2.WINDOW_NORMAL)
 
-file_path =r'C:\Users\1208hrsht\Desktop\video1.avi'
+file_path =r'Input Path of surveillance video'
 cap = cv2.VideoCapture(file_path)
 
 consecutiveframe=20
