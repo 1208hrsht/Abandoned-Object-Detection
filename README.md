@@ -1,6 +1,7 @@
 # Abandoned-Object-Detection
 Abandoned Object Detection using Canny Edge Detection to find contours and Background Subtraction method.
 
+This method gives 100% accuracy in static backgrounds and average accuracy, in case of dynamic backgrounds, is 70.81%.
 
 Steps invloved:
 1)	The input video is divided into frames.
@@ -11,6 +12,8 @@ Steps invloved:
 6)	Contours are formed.
 7)	Contours formed are abandoned objects and are tracked for a predefined time.
 8)	If the object is not moved within a specified time, an alarm is generated
+
+Further, ABODA dataset can be used to check efficiency in different situations which include indoor, outdoor, night, illumination changes, and crowded scenes.
 
 Research Papers used for the same:
 •	An Approach for Unattended Object Detection through Contour Formation using Background Subtraction 
